@@ -25,20 +25,10 @@
     margin:0 auto;
     max-width:1600px;
 }
+/*-----------------------------------Home Content---------------------------------------*/
 .homegrid{
     display:grid;
     grid-template-columns:repeat(10,1fr);
-}
-#logo{
-    width:70%;
-}
-body{
-    background-color:var(--headline-color-on-color);
-    font-family:var(--paragraph-font);
-    font-size:18px;
-    color:var(--accent3-color);
-    margin:0;
-    padding:0;
 }
 .heroimg{
     width: 100%;
@@ -54,24 +44,62 @@ body{
     margin:20px;
     margin-top:40px;
 }
-.section1{
+.hsection1{
     grid-column:6/11;
     grid-row:3/4;
     margin-left:20px;
 }
-.section2{
+.hsection2{
     grid-column:6/11;
     grid-row:4/5;
     margin-left:20px;
 }
-.section3{
+.hsection3{
     grid-column:6/11;
     grid-row:5/6;
     margin-left:20px;
 }
-.section4{
+.hsection4{
     grid-column:1/11;
     grid-row:7/8;
+}
+/*-----------------------------------Vocab Content---------------------------------------*/
+.vocabaccordion{
+    background-color:var(--nav-background-color);
+    color:var(--nav-link-color);
+    cursor:pointer;
+    padding:18px;
+    width:100%;
+    text-align:left;
+    border:none;
+    outline:none;
+    transition:0.4s;
+  }
+.active, .vocabaccordion:hover{
+    background-color:var(--nav-hover-background-color);
+    color:var(--nav-hover-link-color);
+  }
+.vocablist{
+    margin:4%;
+    background-color:var(--paragraph-color-on-white);
+    display: none;
+    overflow: hidden;
+  }
+.vocablist li{
+    padding:2%;
+    color:var(--paragraph-color-on-color);
+}
+/*-----------------------------------Shared Content---------------------------------------*/
+#logo{
+    width:70%;
+}
+body{
+    background-color:var(--headline-color-on-color);
+    font-family:var(--paragraph-font);
+    font-size:18px;
+    color:var(--accent3-color);
+    margin:0;
+    padding:0;
 }
 .title{
     font-family:var(--heading-font);
@@ -139,7 +167,6 @@ footer{
     justify-content:space-around;
     align-items:center;
 }
-
 footer a{
     font-size:1em;
     color:var(--accent3-color);
