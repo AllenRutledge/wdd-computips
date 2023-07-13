@@ -122,6 +122,41 @@
 .vocabend p{
     text-align:center;
 }
+/*-----------------------------------Vocab Content---------------------------------------*/
+.scamhelpgrid{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+}
+.scamhelpintro{
+    grid-column:2/10;
+    grid-row:1/2;
+}
+.malwareintro{
+    grid-column:1/5;
+    grid-row:2/3;
+}
+.scamintro{
+    grid-column:6/11;
+    grid-row:2/3;
+}
+.scamhelpimage{
+    margin-left:3%;
+    margin-top:6%;
+    width:10%;
+    float:left;
+}
+.scamhelppart1{
+    grid-column:1/11;
+    grid-row:3/5;
+}
+.scamhelppart2{
+    grid-column:6/11;
+    grid-row:6/8;
+}
+.scamhelpend{
+    grid-column:1/11;
+    grid-row:9/10;
+}
 /*-----------------------------------Shared Content---------------------------------------*/
 #logo{
     width:70%;
